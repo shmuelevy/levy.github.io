@@ -1,0 +1,32 @@
+<html>
+
+<body>
+   
+    
+   <input  type="password" id="in"> תכניס את הסיסמה שלך יא הומו:
+   <br>
+<button id='but'>click</button>
+<br>
+<svg  width="200" height="200">
+    <circle cx="100" cy="100" r="40" fill="red" id='cl' />
+</svg>
+<button onclick="cl.style.fill='black';">press me</button>
+</body>
+<script>
+    let cir=document.getElementById('cl')
+    let inp=document.getElementById('in')
+    let but=document.getElementById('but');
+    but.addEventListener('click',()=>{
+        but.textContent='clicked';
+        cir.style.fill='blue';
+       let x=''
+      if(inp.innerHTML){
+        x=inp.innerHTML
+            alert('password submitted'+x);
+        
+      }
+       
+ 
+    })
+</script>
+</html>
